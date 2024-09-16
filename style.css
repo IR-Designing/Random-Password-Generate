@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #2cf2f1;
+  box-sizing: border-box;
+}
+
+.contianer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  position: relative;
+  margin: auto;
+  top: 2rem;
+  background: #363636;
+  width: 48rem;
+  height: 31rem;
+  border-radius: 10px;
+  box-shadow: 4px 12px 31px 0px black;
+}
+
+.box h2 {
+  text-align: center;
+  padding: 20px;
+  color: #2cf2f1;
+  font-family: "Roboto Condensed";
+  letter-spacing: 2.5px;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+form input {
+  background: black;
+  width: 37rem;
+  height: 2rem;
+  padding: .5rem;
+  outline: none;
+  border-radius: 4px;
+  color: #2cf2f1;
+  ;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+#gen-btn {
+  width: 11rem;
+  height: 3rem;
+  margin-top: 2rem;
+  position: relative;
+  top: 14rem;
+  right: 13.8rem;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: .6s;
+  font-size: 1rem;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 1;
+  color: black;
+  background: #2cf2f1;
+  border: 2px solid #2cf2f1;
+}
+
+#gen-btn:hover {
+  background: #2cf2f1;
+  box-shadow: 0 0 10px #2cf2f1, 0 0 40px #2cf2f1;
+  color: #2cf2f1;
+}
+
+#gen-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: black;
+  border: 2px solid #2cf2f1;
+  width: 0%;
+  height: 93%;
+  transition: .4s;
+  z-index: -1;
+  border-radius: 6px;
+}
+
+#gen-btn:hover::before {
+  width: 98.2%;
+  color: #2cf2f1;
+}
+
+
+#copy-btn {
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  border-radius: 7px;
+  cursor: pointer;
+  background: none;
+  font-size: 2.5rem;
+  transition: .6s;
+  border: none;
+  right: 5rem;
+  margin-top: .2rem;
+  color: white;
+}
+
+#copy-btn:hover {
+  color: #2cf2f1;
+}
+
+h3 {
+  color: #2cf2f1;
+  position: absolute;
+  font-family: "Nanum Gothic";
+  letter-spacing: 1px;
+  font-weight: 600;
+  border-bottom-style: dashed;
+  width: 38rem;
+  line-height: 4rem;
+  margin-left: 4rem;
+  margin-top: 3rem;
+}
+
+.pass-input {
+  display: flex;
+}
+
+.check-box {
+  border: 2px solid #2cf2f1;
+  display: grid;
+  height: 10rem;
+  grid-template-columns: repeat(2, 1fr);
+  width: 38rem;
+  grid-gap: 12rem;
+  position: relative;
+  bottom: 0rem;
+  font-family: "Nanum Gothic";
+}
+
+.boxes input {
+  width: 1rem;
+  height: 1rem;
+  margin-left: 1rem;
+  margin-top: .8rem;
+  accent-color: #2cf2f1;
+  transition: .6s;
+}
+
+.boxes input:hover {
+  accent-color: #2cf2f1;
+  box-shadow: 0 0 10px #2cf2f1, 0 0 40px #2cf2f1;
+}
+
+.boxes label {
+  color: #2cf2f1;
+  margin-left: 0.5rem;
+}
+
+.check-box .range label {
+  color: #2cf2f1;
+}
+
+#volume {
+  width: 8rem;
+  position: absolute;
+  top: 3rem;
+  left: 26rem;
+  accent-color: #2cf2f1;
+  transition: .6s;
+}
+
+
+#volume:hover {
+  accent-color: #2cf2f1;
+  filter: drop-shadow(0 0 10px #2cf2f1)
+}
+
+#num {
+  position: absolute;
+  width: 2rem;
+  height: 1rem;
+  top: 1rem;
+  left: 31.6rem;
+  font-size: .8rem;
+}
+
+.range {
+  display: flex;
+  width: 13rem;
+  height: 10rem;
+}
+
+.range label {
+  color: white;
+  position: absolute;
+  top: 1rem;
+  left: 26rem;
+  width: 6rem;
+}
+
+p {
+  color: #00ff34;
+  position: relative;
+  top: 5.2rem;
+  left: 3rem;
+  letter-spacing: .5rem;
+  font-family: "Nanum Gothic";
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+
+p span {
+  color: #2cf2f1;
+}
+
+
+@media only screen and (max-width: 700px) {
+  body {
+    background-color: #2cf2f1;
+    ;
+  }
+
+  .container {
+    min-width: 100vw;
+    height: 100vh;
+  }
+
+  .box {
+    margin-left: 1.5rem;
+  }
+
+  .check-box {}
+
+  #gen-btn {
+    right: 9.8rem;
+  }
+}
+
+/* @media only screen and (max-width: 200px) {
+  .box{
+      width: 100vw;
+      height: 100vh;
+  }
+
+    .container{
+      width: 407vw;
+    }
+} */
