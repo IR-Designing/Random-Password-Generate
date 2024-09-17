@@ -14,20 +14,16 @@ body {
 .contianer {
   width: 100vw;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .box {
   position: relative;
   margin: auto;
-  top: 2rem;
+  top: 3rem;
   background: #363636;
-  width: 48rem;
+  width: 46rem;
   height: 31rem;
   border-radius: 10px;
-  box-shadow: 4px 12px 31px 0px black;
 }
 
 .box h2 {
@@ -54,8 +50,7 @@ form input {
   padding: .5rem;
   outline: none;
   border-radius: 4px;
-  color: #2cf2f1;
-  ;
+  color:#2cf2f1;;
   font-size: 1.5rem;
   font-weight: 600;
 }
@@ -79,13 +74,11 @@ form input {
   background: #2cf2f1;
   border: 2px solid #2cf2f1;
 }
-
-#gen-btn:hover {
+#gen-btn:hover{
   background: #2cf2f1;
   box-shadow: 0 0 10px #2cf2f1, 0 0 40px #2cf2f1;
   color: #2cf2f1;
 }
-
 #gen-btn::before {
   content: "";
   position: absolute;
@@ -100,7 +93,7 @@ form input {
   border-radius: 6px;
 }
 
-#gen-btn:hover::before {
+#gen-btn:hover::before{
   width: 98.2%;
   color: #2cf2f1;
 }
@@ -113,19 +106,19 @@ form input {
   border-radius: 7px;
   cursor: pointer;
   background: none;
+  color: white;
   font-size: 2.5rem;
   transition: .6s;
   border: none;
-  right: 5rem;
+  right: 4rem;
   margin-top: .2rem;
-  color: white;
 }
 
-#copy-btn:hover {
+#copy-btn:hover{
   color: #2cf2f1;
 }
 
-h3 {
+h3{
   color: #2cf2f1;
   position: absolute;
   font-family: "Nanum Gothic";
@@ -137,9 +130,8 @@ h3 {
   margin-left: 4rem;
   margin-top: 3rem;
 }
-
-.pass-input {
-  display: flex;
+.pass-input{
+ display: flex;
 }
 
 .check-box {
@@ -163,7 +155,7 @@ h3 {
   transition: .6s;
 }
 
-.boxes input:hover {
+.boxes input:hover{
   accent-color: #2cf2f1;
   box-shadow: 0 0 10px #2cf2f1, 0 0 40px #2cf2f1;
 }
@@ -172,9 +164,8 @@ h3 {
   color: #2cf2f1;
   margin-left: 0.5rem;
 }
-
-.check-box .range label {
-  color: #2cf2f1;
+.check-box .range label{
+   color: #2cf2f1;
 }
 
 #volume {
@@ -187,7 +178,7 @@ h3 {
 }
 
 
-#volume:hover {
+#volume:hover{
   accent-color: #2cf2f1;
   filter: drop-shadow(0 0 10px #2cf2f1)
 }
@@ -200,13 +191,11 @@ h3 {
   left: 31.6rem;
   font-size: .8rem;
 }
-
-.range {
+.range{
   display: flex;
   width: 13rem;
   height: 10rem;
 }
-
 .range label {
   color: white;
   position: absolute;
@@ -214,8 +203,7 @@ h3 {
   left: 26rem;
   width: 6rem;
 }
-
-p {
+p{
   color: #00ff34;
   position: relative;
   top: 5.2rem;
@@ -225,41 +213,31 @@ p {
   font-size: 1.3rem;
   font-weight: 900;
 }
-
-p span {
+p span{
   color: #2cf2f1;
 }
 
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 824px) {
   body {
-    background-color: #2cf2f1;
-    ;
+    background-color: #2cf2f1;;
   }
-
-  .container {
+  .container{
     min-width: 100vw;
     height: 100vh;
   }
-
-  .box {
-    margin-left: 1.5rem;
+  .box{
+    position: absolute;
+    margin: 0px 2rem;
   }
-
-  .check-box {}
-
-  #gen-btn {
+  #gen-btn{
     right: 9.8rem;
   }
 }
-
-/* @media only screen and (max-width: 200px) {
+@media only screen and (max-width: 358px) {
   .box{
-      width: 100vw;
-      height: 100vh;
+    position: absolute;
+    margin: 0px 2rem;
   }
 
-    .container{
-      width: 407vw;
-    }
-} */
+}
