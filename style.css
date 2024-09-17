@@ -228,7 +228,7 @@ p span{
   }
   .box{
     position: absolute;
-    margin: 25rem 2rem;
+    margin: 9rem 2rem;
   }
   #gen-btn{
     right: 9.8rem;
@@ -237,7 +237,7 @@ p span{
 @media only screen and (max-width: 358px) {
   .box{
     position: absolute;
-    margin: 0px 2rem;
+    margin: 9rem 2rem;
   }
 
 }
